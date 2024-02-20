@@ -1,0 +1,31 @@
+.content {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.cards {
+    display: grid;  
+    margin: 60px;
+    gap: 50px; 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.form {
+    margin-top: 50px;
+    width: 40%;
+    background-color: skyblue;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;;
+}
+
+.card {
+    display: flex;
+    min-width: 300px; 
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+    padding: 20px;
+
+}

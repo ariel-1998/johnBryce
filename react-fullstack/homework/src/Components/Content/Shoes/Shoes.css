@@ -1,0 +1,12 @@
+.shoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    align-items: center;
+    height: 70vh;
+}
+
+.active {
+    font-weight: bold;
+}

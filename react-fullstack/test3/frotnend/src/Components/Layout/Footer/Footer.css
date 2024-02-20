@@ -1,0 +1,23 @@
+.Footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.border {
+    position: relative;
+    width: 90%;
+    border-top: 1px solid #333;
+    left: auto;
+    right: auto;
+
+
+}
+
+
+/* .string {
+    padding-top:30px ;
+} */

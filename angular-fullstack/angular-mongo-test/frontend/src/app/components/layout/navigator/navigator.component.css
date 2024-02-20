@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background-color: beige;
+    gap: 8px;
+}
+
+.clicked {
+    font-size: larger;
+    font-weight: bold;
+    color: brown;
+}
+a {
+    margin-top: 5px;
+}

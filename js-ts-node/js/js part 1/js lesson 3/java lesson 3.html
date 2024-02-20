@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>java lesson 3</title>
+    <script>
+      costumer = {
+        firstName: "ariel",
+        lastName: "kashani",
+        id: "111111112",
+        email: "aaa@gmail.com",
+        address: {
+          city: "tlv",
+          street: "jabotinski",
+          stNumber: "39",
+        },
+      };
+      document.write("first name: " + costumer.firstName + "<br/>");
+      document.write("last name: " + costumer.lastName + "<br/>");
+      document.write("id: " + costumer.id + "<br/>");
+      document.write("email: " + costumer.email + "<br/>");
+      document.write("email: " + costumer.address.city + "<br/>");
+      document.write("email: " + costumer.address.street + "<br/>");
+      document.write("email: " + costumer.address.stNumber + "<br/>");
+
+      //2
+
+      student = {
+        fullName: "ariel kashani",
+        gpa: "87",
+        age: "23",
+        phoneNumber: "050-5555555",
+      };
+
+      document.write("full name: " + student.fullName + "<br/>");
+      document.write("GPA: " + student.gpa + "<br/>");
+      document.write("age: " + student.age + "<br/>");
+      document.write("phone number: " + student.phoneNumber + "<br/><br/>");
+
+      student2 = {
+        fullName: prompt("full name"),
+        gpa: prompt("GPA"),
+        age: prompt("age"),
+        phoneNumber: prompt("phone number"),
+      };
+
+      document.write("full name: " + student2.fullName + "<br/>");
+      document.write("gpa: " + student2.gpa + "<br/>");
+      document.write("age: " + student2.age + "<br/>");
+      document.write("phone number: " + student2.phoneNumber + "<br/><br/>");
+
+      //3
+
+      car = {
+        designer: "designer",
+        model: "skoda",
+        color: "black",
+        engineCapacity: "2000",
+      };
+      for (a in car) {
+        document.write(a + ": " + car[a] + "<br>");
+      }
+
+      for (a in car) {
+        document.write(car[a] + "<br>");
+      }
+
+      for (a in car) {
+        document.write(a + ": " + "<br>");
+      }
+
+      car2 = {
+        designer: "designer",
+        model: "skoda",
+        color: "black",
+        engineCapacity: "2000",
+        numbers: {
+          1: "11",
+          2: "22",
+          3: "33",
+        },
+      };
+      for (a in car2) {
+        document.write(a + ": " + car2[a] + "<br>");
+      }
+
+      //4
+
+      fruits = ["apple", "banana", "loquat", "pear"];
+      for (i = 0; i < fruits.length; i++) {
+        document.write(fruits[i] + "<br/>");
+      }
+
+      //5
+
+      grades = [];
+      avg = 0;
+      for (a = 0; a < 10; a++) {
+        a = prompt(gardes.push("grade"));
+        document.write(a + " / ");
+        avg = avg + a;
+      }
+      document.write("this is your avg: " + avg);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        
+
+const canvas = document.getElementById(`canvas`);
+const painter = canvas.getContext(`2d`);
+let x = canvas.width / 2;
+let y = canvas.height / 2;
+let radius = 50;
+
+function move(dx, dy){
+    x = x + dx;
+    y = y + dy;
+    borders()
+    drawCircle()
+
+}
+
+function drawCircle(){
+    painter.clearRect(0 ,0 ,canvas.width, canvas.height)
+    painter.beginPath();
+    painter.arc(x, y, radius, 0, 2 * Math.PI);
+    painter.stroke()
+}
+
+function borders(){
+    x = Math.min(x, canvas.width - radius);
+    y = Math.min(y, canvas.height - radius);
+
+    x = Math.max(x, radius)
+    y = Math.max(y, radius)
+
+
+}
+
+    </script>
+</head>
+<body>
+    
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <button onclick="move(0, -10)">up</button>
+    <button onclick="move(0, 10)">down</button>
+    <button onclick="move(-10, 0)">left</button>
+    <button onclick="move(10, 0)">right</button>
+
+
+</body>
+</html>

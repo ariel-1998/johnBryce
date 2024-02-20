@@ -1,0 +1,11 @@
+.shoeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.cardImage {
+    height: 80px;
+    width: 80px;
+}

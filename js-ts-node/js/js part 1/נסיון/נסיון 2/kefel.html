@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template: repeat(10 , 30px) / repeat(10 , 30px);
+        }
+        .span{
+            border:1px solid black;
+
+        }
+    </style>
+    <script>
+        document.write(`<div class="grid">`)
+const matrix = []
+
+for(let i = 0; i < 10; i++){
+    matrix[i] = []
+    for(let j = 0; j < 10; j++){
+        matrix[i].push((i + 1) * (j + 1))
+    }
+}
+for (const array of matrix) {
+    for (const key of array) {
+    document.write(`<span class="span"> ${key}</span> `)
+        
+    }
+}
+document.write(`</div>`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

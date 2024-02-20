@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+    <script src="json.js"></script>
+    <style>
+        .invisible{
+            display: none;
+        }
+        .visible{
+            display: inline;
+        }
+    </style>
+</head>
+<body id="body" onload="bodyColor()">
+    <input type="email" id="email" name="email" placeholder="email">
+    <button onclick="localStorageLoad()">LOAD</button>
+    <button onclick="localStorageSave()">SAVE</button><br><br>
+
+
+    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="phone number">
+    <button onclick="localStorageLoad2()">LOAD2</button>
+    <button onclick="localStorageSave2()">SAVE2</button><br><br>
+
+    <input type="text" id="firstName" name="firstName" placeholder="first Name">
+    <input type="text" id="lastName" name="lastName" placeholder="last Name">
+    <button onclick="localStorageLoad3()">LOAD3</button>
+    <button onclick="localStorageSave3()">SAVE3</button><br><br>
+
+    <input type="text" id="city" name="city" placeholder="city">
+    <span class="invisible" id="cityValid">you didn't erter your city!</span>
+    <input type="text" id="street" name="street" placeholder="street">
+    <span class="invisible" id="streetValid">you didn't erter your street!</span>
+    <input type="text" id="house" name="house" placeholder="house">
+    <span class="invisible" id="houseValid">you didn't erter your house number!</span>
+    <input type="text" id="zip" name="zip" placeholder="zip">
+    <span class="invisible" id="zipValid">you didn't erter your zip code!</span>
+    <button onclick="localStorageLoad4()">LOAD4</button>
+    <button onclick="localStorageSave4()">SAVE4</button><br><br>
+
+    <select name="colors" id="colors" onchange="colors()">
+        <option >select color</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+</body>
+</html>

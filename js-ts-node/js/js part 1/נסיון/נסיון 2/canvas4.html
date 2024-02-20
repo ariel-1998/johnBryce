@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas 4</title>
+    <script src="canvas4.js" defer></script>
+    <style>
+        canvas{
+            border: 1px solid black;
+        }
+        button{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <button onclick="square(0, -10)">up</button>
+    <button onclick="square(0, 10)">down</button>
+    <button onclick="square(-10, 0)">left</button>
+    <button onclick="square(10 , 0)">right</button>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>contact us!</title>
+        <style> body {
+            background-image: url(https://eda.europa.eu/images/default-source/images/cyber.jpg);
+            }
+            label {
+                font-size: larger; color: red;
+            }
+            input {
+            background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center ; font-size: 40px ; text-decoration: underline;">contact us!</h1>
+        <form action="thankyou.html">
+            <ul>
+                <li><label for="name">enter your name:</label>
+                <input type="text" id="name" name="firtName" placeholder="first name"/></li><br/>
+                <li><label for="lastname">enter your last name:</label>
+                <input type="text" id="lastname" name="lastName" placeholder="last name"></li> <br/>
+                <li><label for="dateOfBearth">enter your date of bearth:</label>
+                <input type="date" id="date" name="dateOfBearth"/></li><br/>
+                <li><label for="mail">enter your email:</label>
+                <input type="email" id="mail" name="email" placeholder="email"/></li><br/>
+                <li><label for="phone">enter your phone number:</label>
+                <input type="tel" id="phone" name="phoneNumber" placeholder="phone number"/></li><br/>
+                <li><label for="address">write your address:</label>
+                <textarea rows="3" id="address" name="address" 
+                placeholder="enter your adress in 3 different rows"></textarea><br><br>
+                 <li><label for="homepage">what is your home page?</label>
+                <input type="url" id="homepage" name="homePage" placeholder="home page"></li><br/>
+                <li><label for="radio">do you own a vehicle?</label>
+                <input type="radio" id="radio" name="ownVehicle" value="yes">yes</input>
+                <input type="radio" id="radio" name="ownVehicle" value="no">no</input></li><br/>
+                <li><label for="front">are you a frot-end developer?</label>
+                <input type="checkbox" id="front" name="frontEnd"></li><br/>
+                <li><label for="back">are you a back-end developer?</label>
+                <input type="checkbox" id="back" name="backEnd"></li><br/>
+                <li><label for="design">do you have the knowledge to design webs?</label>
+                <input type="checkbox" name="design" id="designe"></li><br/>
+                <li><select name="district">
+                  <option value="north district">north district</option>
+                  <option value="haifa district">haifa district</option>
+                  <option value="tel-aviv district">tel-aviv district</option>
+                  <option value="central district">central district</option>
+                  <option value="jerusalem district">jerusalem district</option>
+                  <option value="south district">south district</option> 
+                  <option value="judea and samaria district">judea and samaria district</option>
+                </select></li><br/>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </ul>
+        </form>
+    </body>
+</html>

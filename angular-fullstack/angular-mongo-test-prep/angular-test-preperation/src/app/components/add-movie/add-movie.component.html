@@ -1,0 +1,25 @@
+<form #myForm="ngForm" class="mt-4 text-center" (submit)="addMovie()">
+    <h1>form</h1>
+
+    <select name="theaterId" class="form-select" [(ngModel)]="movie.theaterId" required>
+        <option *ngFor="let theater of theaters" [value]="theater._id">
+            {{theater.name}}
+        </option>
+    </select>
+
+    <input type="text" 
+    name="name" 
+    [(ngModel)]="movie.name" required>
+
+    <input type="datetime-local" 
+    name="dateTime" 
+    [(ngModel)]="movie.dateTime"
+    maxlength="16" minlength="16" required>
+
+    <input type="number" 
+    name="duration" min="1" max=""
+    [(ngModel)]="movie.duration" required>
+
+    <button [disabled]="myForm.invalid">submit</button>
+
+</form>

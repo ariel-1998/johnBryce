@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM + canvas</title>
+    <script src="DOM + canvas.js"></script>
+    <style>
+        .button{
+            color: white;
+            background-color: green;
+        }
+        .invisible{
+            display: none;
+        }
+        .visible{
+            display: inline;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>1</p>
+    <form action="a.html" onsubmit="powerOf3(event)">
+        <input id="number" type="text" name="number" placeholder="write a number">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <p>2</p>
+    <input id="number1" type="text" name="number1" placeholder="write a number">
+    <input id="number2" type="text" name="number2" placeholder="write a number">
+    <input id="number3" type="text" name="number3" placeholder="write a number">
+    <button onclick="sum()">SUM</button>
+    <button onclick="avg()">AVG</button>
+
+    <p>3</p>
+    <input onkeydown="colors()" id="colors" type="text" name="text" placeholder="colors">
+
+    <p>4</p>
+    <input  id="email" type="email" name="email" placeholder="email">
+    <span id="emailSpan"></span>
+    <button onclick="email()">SEND</button>
+
+    <p>5</p>
+    <input id="firstName" type="text" name="firstName" placeholder="first Name">
+    <input id="lastName" type="text" name="lastName" placeholder="last Name">
+    <button onclick="fullName()">SEND</button>
+    <span id="validation" style="display: block;"></span>
+
+    <p>6</p>
+    <input type="email" name="email2" id="email2" placeholder="email2">
+    <span id="emailSpan2"></span>
+    <button onclick="email2()">SEND</button>
+
+    <p>7</p>
+    <input id="firstName2" type="text" name="firstName2" placeholder="first Name2">
+    <input id="lastName2" type="text" name="lastName2" placeholder="last Name2">
+    <button onclick="fullName2()">SEND</button>
+    <span id="validation2" style="display: block;"></span>
+
+    <p>8</p>
+    <div onmouseover="enter(event)" onmouseout="leave(event)">
+        <button class="button" >BUTTON 1</button>
+        <button class="button">BUTTON 2</button>
+        <button class="button">BUTTON 3</button>
+        <button class="button">BUTTON 4</button>
+    </div>
+
+    <h1>canvas</h1>
+    <canvas id="canvas" height="400" width="400" style="border: 1px solid black; margin-left:100px ;"></canvas><br>
+    <button onclick="randonCircle()">QUESTION 1</button>
+    <button onclick="randonCircle2()">QUESTION 2</button>
+    <button onclick="randomRectangle()">QUESTION 3</button>
+    <button onclick="randomRectangle2()">QUESTION 4</button><br>
+    <input type="text" name="xx" id="xx" placeholder="xx">
+    <input type="text" name="yy" id="yy" placeholder="yy">
+    <input type="text" name="width" id="width" placeholder="width">
+    <input type="text" name="height" id="height" placeholder="height">
+    <select name="colors" id="select">
+        <option value="">choose</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+        <option value="black">black</option>
+        <option value="red">red</option>
+        <option value="purple">purple</option>
+    </select>
+    <button onclick="create()">create</button>
+    <span class="invisible" id="fillCheck">fill all the boxes!</span>
+
+
+
+
+
+</body>
+</html>

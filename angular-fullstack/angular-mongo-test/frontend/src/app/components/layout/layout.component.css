@@ -1,0 +1,26 @@
+div {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 13% auto 5%;
+}
+
+header {
+    grid-column: span 12;
+}
+
+aside {
+    grid-column: span 2;
+    overflow-y: auto;
+}
+
+main {
+    grid-column: span 10;
+    overflow-y: auto;
+    height: 100%;
+    background-color: cornsilk;
+}
+
+footer {
+    grid-column: span 12;
+}

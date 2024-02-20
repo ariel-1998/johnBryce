@@ -1,0 +1,22 @@
+div {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% auto 5%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+div > * {
+    border: 2px solid black;
+}
+
+header {
+    grid-column: span 6;
+}
+
+main {
+    grid-column: span 5;
+}
+
+footer {
+    grid-column: span 6;
+}

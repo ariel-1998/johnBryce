@@ -1,0 +1,6 @@
+header{
+    background-color: burlywood;
+}
+header > h1{
+    color: #333
+}

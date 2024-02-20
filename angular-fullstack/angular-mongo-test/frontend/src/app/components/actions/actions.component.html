@@ -1,0 +1,32 @@
+<div >
+    <form #myForm="ngForm" (submit)="onSubmit()">
+        <h1 class="text-center">Report action</h1>
+        <div class="mb-3">
+            <label class="form-label mt-4">account number</label>
+            <input name="account" type="number" [(ngModel)]="operation.accountNumber" 
+            class="form-control" min="5">
+            <label class="form-label mt-4">Select action</label>
+
+            <select name="action" class="form-select text-center" [(ngModel)]="operation.type" required>
+                <option value="deposit">Deposit</option>
+                <option value="loan">Loan</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
+
+            <label class="form-label mt-4">Amount</label>
+            <input type="number" [(ngModel)]="operation.amount" 
+            class="form-control" name="amount" min="1">
+
+            <div *ngIf="operation.type == 'loan'">
+                <label class="form-label mt-4">Payments you want</label>
+                <input type="number" [(ngModel)]="operation.payments" 
+                class="form-control" name="payment">
+                <label class="form-label mt-4">interest</label>
+                <input type="number" [(ngModel)]="operation.interest" 
+                class="form-control" name="intrest">
+            </div>
+        </div>
+
+        <button class="btn btn-primary" [disabled]="myForm.invalid">Submit</button>
+    </form>
+</div>

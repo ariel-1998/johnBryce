@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "640f5873a5564d49084b4eb1"
+  },
+  "accountNumber": 123456789,
+  "type": "deposit",
+  "amount": 450,
+  "date": {
+    "$date": {
+      "$numberLong": "1670796000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "640f6cbddb050b1fb0068c67"
+  },
+  "accountNumber": 123456789,
+  "type": "deposit",
+  "amount": 123,
+  "date": {
+    "$date": {
+      "$numberLong": "1678732477583"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "640f6fe313455b175b2e1d83"
+  },
+  "accountNumber": 123456,
+  "type": "deposit",
+  "amount": 15,
+  "date": {
+    "$date": {
+      "$numberLong": "1607724000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "640f703013455b175b2e1d86"
+  },
+  "accountNumber": 123456789,
+  "type": "deposit",
+  "amount": 150,
+  "date": {
+    "$date": {
+      "$numberLong": "1678733360199"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "640f74dd61a1e9ed70284753"
+  },
+  "accountNumber": 65564,
+  "type": "loan",
+  "amount": 5145,
+  "date": {
+    "$date": {
+      "$numberLong": "1678734557944"
+    }
+  }
+}]

@@ -1,0 +1,9 @@
+.meetingTable {
+	display:  flex;
+    min-width: 500px;
+    min-height: 400px;
+}
+
+td{
+    border: 1px solid black;
+}

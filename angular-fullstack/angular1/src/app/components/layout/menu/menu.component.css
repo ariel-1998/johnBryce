@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 2em;
+}
+
+.active {
+    font-weight: bold;
+    color: black;
+}

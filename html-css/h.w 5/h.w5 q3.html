@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>h.w.5 layout 3</title>
+        <style>
+            .grid img{
+                height: 90px;
+                width: 130px;
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 90px 50px 300px 50px;
+                border: 2px solid black;
+                width: 900px;
+                margin: 0 auto;
+            }
+
+            header{
+                text-align: center;
+                border: 2px solid black;
+
+            }
+            .grid .menu{
+                display: flex;
+                justify-content: space-around;
+                border: 2px solid black;
+                grid-column: 1/3;
+                align-items: center;
+            }
+            .grid nav{
+                border: 2px solid black;
+                grid-column: 1/3; 
+            }
+            .footer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid black;
+                grid-column:1/3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NSpAN53g3IiZn6Tkdew2k8dNRrh_Bfa-DA&usqp=CAU">
+            <header><h1>sports website</h1></header>
+            <div class="menu">
+                <span>menu of sports websites links:</span>
+                <a href="https://www.sport5.co.il/" target="blank">sport5</a>
+                <a href="https://sport1.maariv.co.il/" target="blank">sport1</a>
+                <a href="http://www.one.co.il/" target="blank">one</a>
+            </div>
+            <nav>
+                <h3>an article about Messi's 5 goals with argentina by cnn</h3>
+                    <p>(CNN)Lionel Messi scored all five of Argentina's goals as it beat Estonia 5-0 in an international friendly on Sunday.
+                        The 34-year-old was in clinical form as he opened the scoring with a penalty before adding four more goals in his country's rout.
+                        Messi, who has 86 goals in 162 international games, has now climbed above Hungarian legend Ferenc Puskás in the all-time international top scoring list.
+                        The PSG star is behind former Malaysia forward Mokhtar Dahari (89), Iran's Ali Daei (109) and Cristiano Ronaldo.
+                        The Portuguese talisman netted twice for Portugal at the weekend, extending his record to 117 international goals.
+                        Despite a disappointing debut season in Paris, Messi proved he's still a class above the rest for his country.
+                        His five-goal glut came just days after Argentina beat Italy 3-0 in a heavyweight clash at Wembley Stadium in the Finalissima.
+                        Despite not getting on the scoresheet that day, Messi provided two assists in a vintage performance that reminded everyone why he's considered perhaps the best player in history.
+                        Estonia may not have been the most difficult opposition for Messi on Sunday, but the forward took no prisoners.
+                        After swiping home his penalty, the Argentine added a second just before halftime with a fine angled finish.
+                        He then added three more in the second half as he finished his season with a performance to remember.</p> 
+            </nav>
+            <span class="footer">thank you for visiting our website!</span>
+        </div>
+    </body>
+</html>

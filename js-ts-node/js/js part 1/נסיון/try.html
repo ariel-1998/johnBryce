@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>trying</title>
+        <script src="try.js"></script>
+        <style>
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(10, 30px);
+                grid-template-rows: repeat(10, 30px);
+            }
+            .green{
+                background-color: green;
+            }
+            #canvas{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="address">address</label>
+         <textarea required name="address" id="address" cols="30" rows="3" placeholder="city
+         street
+         street number"></textarea>
+         <button type="submit">submit</button>
+        </form>
+
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <button onclick="move(0, -10)">up</button>
+        <button onclick="move(0, 10)">down</button>
+        <button onclick="move(-10, 0)">left</button>
+        <button onclick="move(10, 0)">right</button>
+
+    </body>
+</html>

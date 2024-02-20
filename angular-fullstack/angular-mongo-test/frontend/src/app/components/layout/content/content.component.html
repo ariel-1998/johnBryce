@@ -1,0 +1,21 @@
+<div class="content">
+    <h1 class="text-center">Check account history</h1>
+    <div class="form">
+        <div class="mb-3">
+            <label class="form-label mt-4"> Insert account number</label>
+            <input type="number" class="form-control" [(ngModel)]="account">
+            <button class="btn btn-primary mt-4" (click)="onclick()">submit</button>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div  class="card" *ngFor="let operation of operations">
+            <p>Operation type: {{operation.type}}</p>
+            <p>{{operation.type}} amount: {{operation.amount}}</p>
+            <p>{{operation.type}} date: {{operation.date | date: "mediumDate"}}</p>
+            <p *ngIf="operation.interest" >{{operation.type}} interest: {{operation.interest}}</p>
+            <p *ngIf="operation.payments" >{{operation.type}} amount: {{operation.payments}}</p>
+        </div>
+
+
+    </div>

@@ -1,0 +1,9 @@
+form {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    margin: auto;
+    row-gap: 40px;
+    background-color: rgb(203, 212, 233);
+    color: #222
+}

@@ -1,0 +1,5 @@
+.Layout {
+    grid-template-areas: 'header header header'
+                            'menu content content'
+                            'menu content content'
+}

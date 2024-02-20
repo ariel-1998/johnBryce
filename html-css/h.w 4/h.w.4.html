@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title>home work 4</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1"
+    />
+    <style>
+      .form {
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        height: 400px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .img {
+        display: flex;
+        width: 200px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+      }
+      .name {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .ul {
+        list-style-type: none;
+      }
+      .but {
+        display: flex;
+        width: 100px;
+        height: 300px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .d {
+        height: 50px;
+      }
+      .i {
+        height: 30px;
+        width: 50px;
+      }
+      body {
+        background-color: aquamarine;
+      }
+      @media screen and (min-width: 300px) and (max-width: 700px) {
+        .form {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          height: 400px;
+          gap: 0px;
+          justify-content: center;
+          align-items: center;
+        }
+        .img {
+          display: flex;
+          width: 200px;
+          height: 100px;
+          justify-content: center;
+          align-items: center;
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          height: 100px;
+          gap: 5px;
+          justify-content: center;
+          align-items: center;
+        }
+        .ul {
+          list-style-type: none;
+        }
+        .but {
+          display: flex;
+          width: 100px;
+          height: 50px;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+        .d {
+          height: 30px;
+        }
+        .i {
+          height: 30px;
+          width: 50px;
+        }
+        body {
+          background-color: lightgrey;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="max.thomas@example.com">
+      <ul class="ul">
+        <div class="form">
+          <div class="img">
+            <li><img src="https://randomuser.me/api/portraits/men/6.jpg" /></li>
+          </div>
+          <div class="name">
+            <li>
+              <input
+                class="d"
+                type="text"
+                name="fullName"
+                placeholder="Max Thomas"
+              />
+            </li>
+            <li>
+              <input
+                class="d"
+                type="text"
+                name="address"
+                placeholder="8041 Mcclellan Rd"
+              />
+            </li>
+          </div>
+          <div class="but">
+            <button type="submit">
+              <img
+                class="i"
+                src="https://p.kindpng.com/picc/s/150-1509178_small-message-icon-png-clipart-png-download-mail.png"
+              />
+            </button>
+          </div>
+        </div>
+      </ul>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>lesson 5 grid</title>
+        <style>
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 70px 30px 30px 30px 30px ;
+                width: 500px;
+                height: 800px;
+                grid-auto-columns: 1fr 2fr;
+                grid-auto-rows: 30px;
+                row-gap: 30px;
+                border: 1px solid black;
+                margin:0 auto;
+                align-items: center;
+            }
+            .content .h1{
+                grid-column: 1/3;
+                text-align: center;
+                font-size: 50px;
+                margin:0
+            }
+            .content .button{
+                grid-column: 1/3;
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+            .content .input{
+                width: 200px;
+                height: 30px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <form class="content" action="lesson 4 part 2.html">
+            <h1 class="h1">grid</h1>
+                <label for="name">first name:</label>
+                <input class="input" type="text" id="name" name="firstName" placeholder="first name">
+                <label for="last">first name:</label>
+                <input class="input" type="text" id="last" name="lastName" placeholder="last name">
+                <label for="email">first name:</label>
+                <input class="input" type="email" id="email" name="email" placeholder="email address">
+                <label for="phone">first name:</label>
+                <input class="input" type="tel" id="phone" name="phoneNumber" placeholder="phone number">
+                <label for="date">date of birth:</label>
+                <input class="input" type="date" id="date" name="fateOfBirth">
+                <label for="url">home page url:</label>
+                <input class="input" type="url" id="url" name="url" placeholder="url">
+                <label>what is your gender?</label>
+                <div>
+                    <input type="radio" name="gender" value="male"><span>male</span>
+                    <input type="radio" name="gender" value="female"><span>female</span>
+                </div>
+                <label>do you agree to the terms of services?</label>
+                <div>
+                    <input type="checkbox" name="agreeToTerms"><span>yes</span>
+                </div>
+                <div class="button">
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
+                </div>
+        </form>
+    </body>
+</html>

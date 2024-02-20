@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events 2</title>
+    <script src="events 2.js"></script>
+</head>
+<body>
+    <p>1</p>
+    <input id="firstName" name="firstName" type="text" placeholder="first name">
+    <button type="submit" onclick="firstNameValidity()">SUBMIT</button><br/>
+
+    <p>2</p>
+    <input id="firstNameTwo" name="firstName2" type="text" placeholder="first name2">
+    <button type="submit" onclick="firstNameValidity2(this)">SUBMIT</button><br/>
+
+    <p>3</p>
+    <input id="firstNameThree" name="firstName3" type="text" placeholder="first name3"> 
+    <span id="invalidSpan" style="display:none ;">invalid name</span><br/>
+    <button type="submit" onclick="firstNameValidity3(this)">SUBMIT</button><br/>
+
+    <p>4</p>
+    <form action="validation html.html" onsubmit="fullNameValidity(event)" >
+    <input id="firstNameFour" name="firstName4" type="text" placeholder="first name4">
+    <span id="firstNameInvalidFour" style="display: none">invalid first name</span><br>
+    <input id="lastNameFour" name="lastName4" type="text" placeholder="last name4">
+    <span id="lastNameInvalidFour" style="display: none">invalid last name</span><br>
+    <button type="submit">SUBMIT</button>
+    </form><br>
+
+    <p>5</p>
+    <input id="firstNameFive" name="firstName5" type="text" placeholder="first name5">
+    <span id="firstNameInvalidFive" style="display: none">invalid first name</span><br>
+    <input id="lastNameFive" name="lastName5" type="text" placeholder="last name5">
+    <span id="lastNameInvalidFive" style="display: none">invalid last name</span><br>
+    <input id="emailFive" name="email5" type="text" placeholder="email5">
+    <span id="emailInvalidFive" style="display: none">invalid email</span><br>
+    <button onclick="fullNameMailValidity(this)" type="submit">SUBMIT</button><br>
+
+    <p >6</p>
+    <input id="firstNameSix" name="firstName6" type="text" placeholder="first name6">
+    <span id="firstNameInvalidSixS" style="display: none">first name too short!</span>
+    <span id="firstNameInvalidSixL" style="display: none">first name too long!</span><br>
+    <input id="lastNameSix" name="lastName6" type="text" placeholder="last name6">
+    <span id="lastNameInvalidSixS" style="display: none">last name too short!</span>
+    <span id="lastNameInvalidSixL" style="display: none">last name too long!</span><br>
+    <input id="emailSix" name="email6" type="text" placeholder="email6">
+    <span id="emailInvalidSixS" style="display: none">email too short!</span>
+    <span id="emailInvalidSixL" style="display: none">email too long!</span><br>
+    <button onclick="fullNameMailValidityTwo(this)" type="submit">SUBMIT</button><br>
+
+
+</body>
+</html>

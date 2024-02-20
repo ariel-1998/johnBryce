@@ -1,0 +1,66 @@
+<html>
+    <head></head>
+    <title>form 2</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"/>
+    <style>
+                .a{
+            display: flex;
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .b{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+        }
+        @media screen and (min-width:330px) and (max-width:710px) {
+        .a{
+            display: flex;
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .b{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        button{
+                background-color: blue
+            }
+       
+        }
+      
+    </style>
+    </head>
+    <body>
+        <form action="lesson 4.html">
+            <div class="a">
+                <div class="b">
+                <label for="first">first name:</label>
+                <label for="last">last name:</label>
+                <label for="phone">phone number:</label>
+                <label for="email">email address:</label>
+                <button type="submit">SUBMIT</button>
+            </div>
+            <div class="b">
+                <input type="text" id="first" name="firstName" placeholder="first name">
+                <input type="text" id="last" name="lastName" placeholder="last name">
+                <input type="tel" id="phone" name="phone" placeholder="phone">
+                <input type="email" id="email" name="email" placeholder="email">
+                <button type="reset">RESET</button>
+            </div>
+            
+            </div>
+        </form>
+
+    </body>
+</html>

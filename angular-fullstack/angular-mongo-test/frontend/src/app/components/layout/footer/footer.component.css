@@ -1,0 +1,11 @@
+div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+p {
+    border-top: 2px solid black;
+    text-align: center;
+    width: 80%;
+}

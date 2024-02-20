@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+    <script src="jquery-3.6.1.min.js" defer></script>
+    <script src="ajax.js" defer></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<button onclick="getUsersAjax()">AJAX get users</button>
+<div>
+    <input type="text" name="id" id="user-id" placeholder="id">
+    <button onclick="getUsersByIdAjax()">user by id AJAX</button>
+</div>
+<div>
+    <button onclick="getPhotosByAjax()">get photos AJAX</button>
+    <button onclick="getApiUsers()">get Api Users AJAX</button>
+</div>
+<div>
+    <select name="city" id="city">
+        <option value="jerusalem">Jerusalem</option>
+        <option value="tel-aviv">Tel-Aviv</option>
+        <option value="miami">Miami</option>
+        <option value="washington">Washington</option>
+    </select>
+</div>
+</body>
+</html>

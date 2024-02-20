@@ -1,0 +1,47 @@
+<html>
+<title>form </title>
+<style>
+    .o{
+        display: flex;
+        flex-direction:column ;
+        width: 400px;
+        height:400px;
+        justify-content: center;
+        background-color:red;
+        gap: 30px;
+        align-items: center;
+        margin:auto;
+    }
+    .a{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+</style>
+<body><form action="likns.html">
+<div class="o">
+    <div class="a">
+        <label for="first">first name</label>
+        <input type="text" id="first" name="firstName" placeholder="first name">
+    </div>
+    <div class="a">
+        <label for="last">last name:</label>
+        <input type="text" id="last" name="lastName" placeholder="last name">
+    </div>
+    <div class="a">
+        <label for="phone">phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="phone number">
+    </div>
+    <div class="a">
+        <label for="email">email address:</label>
+        <input type="email" id="email" name="email" placeholder="email address">
+    </div>
+    <div class="a">
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+    </div>
+</div>
+</form>
+</body>
+</html>

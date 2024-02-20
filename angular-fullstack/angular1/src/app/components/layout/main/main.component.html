@@ -1,0 +1,8 @@
+<p [title]="name" [className]="name">name: {{name}}</p>
+<button (click)="clickMe(query)">alert</button>
+<input type="text" [(ngModel)]="query">
+<p *ngIf="query || name">{{name }}<br>{{query}}</p>
+
+<ul *ngIf="students">
+    <app-students *ngFor="let student of students"/>
+</ul>

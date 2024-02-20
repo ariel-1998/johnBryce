@@ -1,0 +1,7 @@
+<p [title]="name" [style]="{'color': query, 'backgroundColor': query}">{{name}}</p>
+<button (click)="clickMe($event,12)">click</button>
+<input type="text" [(ngModel)]="query">
+<p *ngIf="query">query: {{ query }}</p>
+<p *ngFor="let s of students">
+    <app-students [student]="s"/>
+</p>

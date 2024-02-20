@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "userName": "arielk",
+        "email": "ariel@g.com",
+        "password": "a123"
+    },
+    {
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "username": "al123456",
+        "email": "aaa@gmail.com",
+        "password": "123456",
+        "id": 2,
+        "role": 1
+    },
+    {
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "username": "al123456",
+        "email": "aaa@gmail.com",
+        "password": "123456",
+        "id": 3,
+        "role": 1
+    },
+    {
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "username": "al123456",
+        "email": "aaa@gmail.com",
+        "password": "123456",
+        "id": 4,
+        "role": 1
+    },
+    {
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "username": "al123456",
+        "email": "aaa@gmail.com",
+        "password": "123456",
+        "id": 5,
+        "role": 1
+    },
+    {
+        "firstName": "ariel",
+        "lastName": "kashani",
+        "username": "arieli",
+        "email": "aaa@gmail.com",
+        "password": "1234567890",
+        "id": 6,
+        "role": 1
+    }
+]

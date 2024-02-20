@@ -1,0 +1,27 @@
+<select class="form-select text-center" [(ngModel)]="selected" (change)="getMovies()">
+    <option value="null" disabled>Select</option>
+    <option *ngFor="let theater of theaters" [value]="theater._id">
+        {{theater.name}}
+    </option>
+</select>
+
+
+
+<table *ngIf="selected" class="text-center">
+<tr>
+    <th>Name</th>
+    <th>Time</th>
+    <th>Duration</th>
+    <th>Delete</th>
+</tr>
+<tr *ngFor="let movie of movies">
+    <td>{{movie.name}}</td>
+    <td>{{movie.dateTime | date:'short' }}</td>
+    <td>{{movie.duration}}</td>
+    <td>
+        <button (click)="deleteMovie(movie._id)">Delete</button>
+    </td>
+</tr>
+</table>
+
+
